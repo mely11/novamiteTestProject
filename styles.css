@@ -32,10 +32,6 @@ body {
     display: flex;
     flex-flow: column;
 }
-#logo-header, #logo-header .app-title, #logo-header .left {
-    display: flex;
-    align-items: center;
-}
 
 .tabs-container {
     height: 100%;
@@ -66,6 +62,60 @@ ul {
     display: block;
     clear: both;
 }
+/* app-title logo */
+#logo-header .app-title {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+#logo-header {
+    background-color: #131741;
+    padding: 12px 10px;
+    height: 45px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo-header, #logo-header .app-title, #logo-header .left {
+    display: flex;
+    align-items: center;
+}
+#logo-header a {
+    cursor: pointer;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#logo-header a img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+/* right */
+#logo-header .right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+#logo-header .row {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#logo-header .user-panel {
+    top: 12px;
+    font-size: 12px;
+}
+span.user-panel {
+}
+#logo-header .user-panel .login-button {
+    color: #3564DB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* SearchTabButton */
 .tab-list .tab-selected {
     color: #fff;
