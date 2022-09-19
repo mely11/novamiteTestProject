@@ -28,6 +28,7 @@ body {
     z-index: 500;
 }
 .tools-wrapper .tools-container {
+    
     max-height: calc(100vh - 20px);
     display: flex;
     flex-flow: column;
@@ -111,22 +112,32 @@ a:-webkit-any-link {
 span.user-panel {
 }
 #logo-header .user-panel .login-button {
-    color: #3564DB;
-    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #0821ff;
+    padding: 7px 14px;
+    font-size: 14px;
     cursor: pointer;
+    display: inline-block;
 }
 
 /* SearchTabButton */
 .tab-list .tab-selected {
+    border-radius: 12px;
+    border: 1px solid #fff;
     color: #fff;
     background-color: #131741;
 }
 .tab-list li {
+    border-radius: 12px;
+    border: 1px solid #0B39AD;
+
     flex: auto;
     text-align: center;
     list-style: none;
     cursor: pointer;
-    color: #eee;
+    color: #aaa;
     padding: 9px 4px 7px;
     border-bottom: 4px solid transparent;
 }
@@ -137,8 +148,10 @@ li {
 ul {
     list-style-type: disc;
 }
-/* visualization-tabButton */
+/* visualization-tabButton disabled */
 .tab-list li[disabled] {
+    border-radius: 12px;
+    border: 1px solid #0B39AD;
     color: #aaa;
 }
 /* SearchTab tabPanelContainer */
@@ -182,8 +195,8 @@ ul {
     background-position-x: 100%;
     background-position-y: 0;
     border: none;
-    border-bottom: 1px solid #fff;
-    border-radius: 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
     padding: 7px 15px 2px 0;
     color: #cdd5e3;
     font-size: .9em;
@@ -406,6 +419,9 @@ input[type="checkbox" i] {
     z-index: 1;
 }
 .search-panel .search-btn-wrapper .eob-btn {
+    border-radius: 12px;
+    border: 1px;
+    padding: 7px 14px;
     margin: 15px 10px;
     display: block;
     text-align: center;
