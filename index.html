@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Novamite</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://kit.fontawesome.com/49a5a1e746.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
 
-    <body>
-        <!--
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novamite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/49a5a1e746.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+
+<body>
+    <!--
         <nav class="navbar">
             <div class="navbar__container">
                 <a href="/" id="navbar__logo"> NOVAMITE </a>
@@ -38,274 +41,286 @@
             </div>
         </nav> -->
 
-        
-        <!-- <div class="main"> -->
-        <div id="app">
-            <!-- Implement map -->
-            <div class="tools-wrapper">
-                <div class="tools-container" style="display: flex;">
-                    <!-- Logo & Login -->
-                    <header id="logo-header">
-                        <div class="left">
-                            <div class="app-title">
-                                <!-- logo -->
-                                <a class="sgLogo" herf="https://imgur.com" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/NovaMite_Logo Icon.png" style="width:35spx;height:30px;">
-                                </a>
-                                <span>NOVAMITE</span>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="row">
-                                <span class="user-panel">
-                                    <!--<div class="search-btn-wrapper"><a class="eob-btn  full-size ">Search</a></div>-->
-                                    <div class="login-button" title="Login to unlock advanced features">
-                                        Login
-                                    </div>
-                                </span>
-                            </div>
-                        </div>
-                    </header>
 
-                    <div class="tabs-container">
-                        <!-- Discover Visualize Compare Pins -->
-                        <ul class="tab-list">
-                            <li id="SearchTabButton" value="0" class="tab-selected">
-                                <i class="fa-solid fa-magnifying-glass"></i> 
-                                Discover
-                            </li>
-                            <li id="visualization-tabButton" value="2" class="" disabled="">
-                                <i class="fa-regular fa-eye"></i>
-                                Visualize
-                            </li>
-                            <li id="CompareTabButton" value="4" class="">
-                                <i class="fa-solid fa-shuffle"></i>
-                                Compare
-                            </li>
-                            <li id="pins-tabButton" value="3" class="">
-                                <i class="fa-solid fa-thumbtack"></i>
-                                Pins
-                            </li>
-                        </ul>
-                        <div id="SearchTab" class="tabPanelContainer">
-                            <!-- Theme Section -->
-                            <div class="active">
-                                <div class="search-panel ">
-                                    <div class="theme-select top">
-                                        <div class="top-label">
-                                            Theme
-                                        </div>
-                                        <p>Login to use custom configuration instances.</p>
-                                        <!-- Dropdown -->
-                                        <div><select class="dropdown">
-                                                <option value="0">Default</option>
-                                                <option value="1">Monitoring Earth from Space</option>
-                                                <option value="2">Agriculture</option>
-                                                <option value="3">Atmosphere and Air Pollution</option>
-                                                <option value="4">Change Detection through Time</option>
-                                                <option value="5">Floods and Droughts</option>
-                                                <option value="6">Geology</option>
-                                                <option value="7">Ocean and Water Bodies</option>
-                                                <option value="8">Snow and Glaciers</option>
-                                                <option value="9">Urban</option>
-                                                <option value="10">Vegetation and Forestry</option>
-                                                <option value="11">Volcanoes</option>
-                                                <option value="12">Wildfires</option>
-                                            </select>
-                                        </div>
+    <!-- <div class="main"> -->
+    <div id="app">
+        <!-- Implement map -->
+        <div class="tools-wrapper">
+            <div class="tools-container" style="display: flex;">
+                <!-- Logo & Login -->
+                <header id="logo-header">
+                    <div class="left">
+                        <div class="app-title">
+                            <!-- logo -->
+                            <a class="sgLogo" herf="https://imgur.com" target="_blank" rel="noopener noreferrer">
+                                <img src="images/NovaMite_Logo Icon.png" style="width:35spx;height:30px;">
+                            </a>
+                            <span>NOVAMITE</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="row">
+                            <span class="user-panel">
+                                <!--<div class="search-btn-wrapper"><a class="eob-btn  full-size ">Search</a></div>-->
+                                <div class="login-button" title="Login to unlock advanced features">
+                                    Login
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="tabs-container">
+                    <!-- Discover Visualize Compare Pins -->
+                    <ul class="tab-list">
+                        <li id="SearchTabButton" value="0" class="tab-selected">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Discover
+                        </li>
+                        <li id="visualization-tabButton" value="2" class="" disabled="">
+                            <i class="fa-regular fa-eye"></i>
+                            Visualize
+                        </li>
+                        <li id="CompareTabButton" value="4" class="">
+                            <i class="fa-solid fa-shuffle"></i>
+                            Compare
+                        </li>
+                        <li id="pins-tabButton" value="3" class="">
+                            <i class="fa-solid fa-thumbtack"></i>
+                            Pins
+                        </li>
+                    </ul>
+                    <div id="SearchTab" class="tabPanelContainer">
+                        <!-- Theme Section -->
+                        <div class="active">
+                            <div class="search-panel ">
+                                <div class="theme-select top">
+                                    <div class="top-label">
+                                        Theme
                                     </div>
-                                    <!-- Dicover Tabs -->
-                                    <ul class="discover-tabs">
-                                        <li class="discover-tab-button active">Search</li>
-                                        <li class="discover-tab-button  ">Commercial Data</li>
-                                        <li class="discover-tab-button  ">Highlights</li>
-                                    </ul>
-                                    <div class="discover-tab ">
-                                        <div class="top-label">
-                                            Data Sources
-                                            <div>
-                                                <div class="checkbox-group">
-                                                    <div class="column">
-                                                        <div>
-                                                            <div class="data-source-group">
-                                                                <label>
-                                                                    <input type="checkbox">&nbsp;
-                                                                    SENTINEL-1
-                                                                </label>
-                                                                <div class="datasources"></div>
-                                                            </div>
+                                    <p>Login to use custom configuration instances.</p>
+                                    <!-- Dropdown -->
+                                    <div><select class="dropdown">
+                                            <option value="0">Default</option>
+                                            <option value="1">Monitoring Earth from Space</option>
+                                            <option value="2">Agriculture</option>
+                                            <option value="3">Atmosphere and Air Pollution</option>
+                                            <option value="4">Change Detection through Time</option>
+                                            <option value="5">Floods and Droughts</option>
+                                            <option value="6">Geology</option>
+                                            <option value="7">Ocean and Water Bodies</option>
+                                            <option value="8">Snow and Glaciers</option>
+                                            <option value="9">Urban</option>
+                                            <option value="10">Vegetation and Forestry</option>
+                                            <option value="11">Volcanoes</option>
+                                            <option value="12">Wildfires</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Dicover Tabs -->
+                                <ul class="discover-tabs">
+                                    <li class="discover-tab-button active">Search</li>
+                                    <li class="discover-tab-button  ">Commercial Data</li>
+                                    <li class="discover-tab-button  ">Highlights</li>
+                                </ul>
+                                <div class="discover-tab ">
+                                    <div class="top-label">
+                                        Data Sources
+                                        <div>
+                                            <div class="checkbox-group">
+                                                <div class="column">
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                SENTINEL-1
+                                                            </label>
+                                                            <div class="datasources"></div>
                                                         </div>
-                                                        <div>
-                                                            <div class="data-source-group">
-                                                                <label>
-                                                                    <input type="checkbox">&nbsp;
-                                                                    SMAP
-                                                                </label>
-                                                                <div class="datasources"></div>
-                                                            </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                SMAP
+                                                            </label>
+                                                            <div class="datasources"></div>
                                                         </div>
-                                                        <div>
-                                                            <div class="data-source-group">
-                                                                <label>
-                                                                    <input type="checkbox">&nbsp;
-                                                                    LANDSAT 
-                                                                </label>
-                                                                <div class="datasources"></div>
-                                                            </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                LANDSAT
+                                                            </label>
+                                                            <div class="datasources"></div>
                                                         </div>
-                                                        <div>
-                                                            <div class="data-source-group">
-                                                                <label>
-                                                                    <input type="checkbox">&nbsp;
-                                                                    MODUS
-                                                                </label>
-                                                                <div class="datasources"></div>
-                                                            </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                MODUS
+                                                            </label>
+                                                            <div class="datasources"></div>
                                                         </div>
-                                                        <div>
-                                                            <div class="data-source-group">
-                                                                <label>
-                                                                    <input type="checkbox">&nbsp;
-                                                                    Other
-                                                                </label>
-                                                                <div class="datasources"></div>
-                                                            </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                Other
+                                                            </label>
+                                                            <div class="datasources"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="clear"></div>
-                                        <div class="select-time-range">
-                                            <div class="top-label">Time Range</div>
-                                            <div class="date-pickers-wrapper">
-                                                <div class="date-picker ">
-                                                    <div class="date-picker-input-wrapper"><i
-                                                            class="fa fa-calendar date-picker-input-icon"></i><input
-                                                            class="date-picker-input" value="2022-08-17"></div>
-                                                </div><span class="date-picker-separator">-</span>
-                                                <div class="date-picker ">
-                                                    <div class="date-picker-input-wrapper"><i
-                                                            class="fa fa-calendar date-picker-input-icon"></i><input
-                                                            class="date-picker-input" value="2022-09-17"></div>
-                                                </div>
-                                                <div class="calendar-holder"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="select-time-range">
+                                        <div class="top-label">Time Range</div>
+                                        <div class="date-pickers-wrapper">
+                                            <div class="date-picker ">
+                                                <div class="date-picker-input-wrapper"><i
+                                                        class="fa fa-calendar date-picker-input-icon"></i><input
+                                                        class="date-picker-input" value="2022-08-17"></div>
+                                            </div><span class="date-picker-separator">-</span>
+                                            <div class="date-picker ">
+                                                <div class="date-picker-input-wrapper"><i
+                                                        class="fa fa-calendar date-picker-input-icon"></i><input
+                                                        class="date-picker-input" value="2022-09-17"></div>
                                             </div>
-                                            <div class="filter-search-by-months"><label class="align-checkbox"><input
-                                                        type="checkbox" value="filter-by-months"> &nbsp;Filter by months</label>
-                                                <div class="months"></div>
-                                            </div>
+                                            <div class="calendar-holder"></div>
+                                        </div>
+                                        <div class="filter-search-by-months"><label class="align-checkbox"><input
+                                                    type="checkbox" value="filter-by-months"> &nbsp;Filter by
+                                                months</label>
+                                            <div class="months"></div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="search-btn-wrapper"><a class="eob-btn  full-size ">Search</a></div>
+                                <div class="search-btn-wrapper"><a class="eob-btn  full-size ">Search</a></div>
 
-                                    <div class="discover-tab hidden">
-                                        <div class="highlights-panel">
-                                            <div class="highlights-notifications">
-                                                <div class="notification ">
-                                                    <i class="fa fa-info-circle" style="margin-right: 6px;"></i>
-                                                    This theme has no highlights.
-                                                </div>
+                                <div class="discover-tab hidden">
+                                    <div class="highlights-panel">
+                                        <div class="highlights-notifications">
+                                            <div class="notification ">
+                                                <i class="fa fa-info-circle" style="margin-right: 6px;"></i>
+                                                This theme has no highlights.
                                             </div>
-                                            <div class="highlights-container"></div>
                                         </div>
+                                        <div class="highlights-container"></div>
                                     </div>
-                                    
-                                    <div class="discover-tab hidden">
-                                        <div class="commercial-data-description">
-                                            Commerical data here
-                                        </div>
+                                </div>
+
+                                <div class="discover-tab hidden">
+                                    <div class="commercial-data-description">
+                                        Commerical data here
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div id="visualization-tab" class="tabPanelContainer">
-                            <div class="none">
-                                <div class="visualization-panel">
-                                    <div class="header">
-                                        <div class="dataset-info">
-                                            <div class="title"><b>Dataset: </b>
-                                                <div class="dataset-name">undefined</div>
-                                            </div>
-                                        </div>
-                                        <div class="date-selection"></div>
-                                    </div>
-                                    <div class="actions">
-                                        <div class="action-wrapper" title="Add to Pins"><i class="fa fa-thumb-tack"></i></div>
-                                        <div class="action-wrapper" title="Show effects and advanced options"><i
-                                                class="fa fa-sliders"></i></div>
-                                        <div class="action-wrapper" title="Add to compare"><i class="fas fa-exchange-alt"></i>
-                                        </div>
-                                        <div class="action-wrapper" title="Show layer"><i class="fa fa-eye"></i></div>
-                                        <div class="action-wrapper" title="Share"><i class="fas fa-share-alt"></i></div>
-                                    </div>
-                                    <div class="layer-datasource-picker"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="CompareTab" class="tabPanelContainer">
-                            <div class="none">
-                                <div class="compare-panel">
-                                    <div class="compare-panel-header">
-                                        <div class="remove-all disabled"><i class="fa fa-trash"></i>Remove all</div>
-                                        <div class="add-all-pins disabled"><i class="fa fa-plus-square"></i>Add all pins</div>
-                                        <div class="compare-panel-toggle"><select class="dropdown">
-                                                <option value="split">Split</option>
-                                                <option value="opacity">Opacity</option>
-                                            </select></div>
-                                    </div>
-                                    <div class="compare-layers-list"></div>
-                                    <div class="notification "><i class="fa fa-info-circle" style="margin-right: 6px;"></i>No
-                                        layers to compare.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="pins-tab" class="tabPanelContainer">
-                            <div class="none">
-                                <div class="pin-panel">
-                                    <div class="pins-header">
-                                        <div class="pins-controls">
-                                            <div class="pin-tools">
-                                                <div class="animate-pins disabled"
-                                                    title="Create a story from pins (You need to log in to use this function.)">
-                                                    <i class="fa fa-film"></i>Story
-                                                </div>
-                                                <div class="share-pins disabled"
-                                                    title="Share pins (You need to log in to use this function.)"><i
-                                                        class="fa fa-share-alt"></i>Share</div>
-                                                <div class="pins-export disabled" title="Export pins to the computer"><i
-                                                        class="fa fa-cloud-download"></i>Export</div>
-                                                <div class="pins-import" title="Import pins from a saved file"><i
-                                                        class="fa fa-cloud-upload"></i>Import</div>
-                                                <div title="Delete all pins" class="pins-delete disabled"><i
-                                                        class="fa fa-trash"></i>Clear</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pins-order">
-                                        <div>Order by:</div>
-                                        <div class="order-btn ">Date<i class="fas fa-chevron-up turn-upside-down"></i></div>
-                                        <div class="order-btn ">Location<i class="fas fa-chevron-up turn-upside-down"></i></div>
-                                        <div class="order-btn ">DatasetId<i class="fas fa-chevron-up turn-upside-down"></i>
-                                        </div>
-                                        <div class="order-btn ">Title<i class="fas fa-chevron-up turn-upside-down"></i></div>
-                                    </div>
-                                    <div class="pins-container">
-                                        <div class="notification "><i class="fa fa-info-circle"
-                                                style="margin-right: 6px;"></i>No pins. Note that the pins will be saved only if
-                                            you log in. Otherwise, the pins will be lost once the application is closed.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    
+
+                    <div id="visualization-tab" class="tabPanelContainer">
+                        <div class="none">
+                            <div class="visualization-panel">
+                                <div class="header">
+                                    <div class="dataset-info">
+                                        <div class="title"><b>Dataset: </b>
+                                            <div class="dataset-name">undefined</div>
+                                        </div>
+                                    </div>
+                                    <div class="date-selection"></div>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-wrapper" title="Add to Pins"><i class="fa fa-thumb-tack"></i>
+                                    </div>
+                                    <div class="action-wrapper" title="Show effects and advanced options"><i
+                                            class="fa fa-sliders"></i></div>
+                                    <div class="action-wrapper" title="Add to compare"><i
+                                            class="fas fa-exchange-alt"></i>
+                                    </div>
+                                    <div class="action-wrapper" title="Show layer"><i class="fa fa-eye"></i></div>
+                                    <div class="action-wrapper" title="Share"><i class="fas fa-share-alt"></i></div>
+                                </div>
+                                <div class="layer-datasource-picker"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="CompareTab" class="tabPanelContainer">
+                        <div class="none">
+                            <div class="compare-panel">
+                                <div class="compare-panel-header">
+                                    <div class="remove-all disabled"><i class="fa fa-trash"></i>Remove all</div>
+                                    <div class="add-all-pins disabled"><i class="fa fa-plus-square"></i>Add all pins
+                                    </div>
+                                    <div class="compare-panel-toggle"><select class="dropdown">
+                                            <option value="split">Split</option>
+                                            <option value="opacity">Opacity</option>
+                                        </select></div>
+                                </div>
+                                <div class="compare-layers-list"></div>
+                                <div class="notification "><i class="fa fa-info-circle"
+                                        style="margin-right: 6px;"></i>No
+                                    layers to compare.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pins-tab" class="tabPanelContainer">
+                        <div class="none">
+                            <div class="pin-panel">
+                                <div class="pins-header">
+                                    <div class="pins-controls">
+                                        <div class="pin-tools">
+                                            <div class="animate-pins disabled"
+                                                title="Create a story from pins (You need to log in to use this function.)">
+                                                <i class="fa fa-film"></i>Story
+                                            </div>
+                                            <div class="share-pins disabled"
+                                                title="Share pins (You need to log in to use this function.)"><i
+                                                    class="fa fa-share-alt"></i>Share</div>
+                                            <div class="pins-export disabled" title="Export pins to the computer"><i
+                                                    class="fa fa-cloud-download"></i>Export</div>
+                                            <div class="pins-import" title="Import pins from a saved file"><i
+                                                    class="fa fa-cloud-upload"></i>Import</div>
+                                            <div title="Delete all pins" class="pins-delete disabled"><i
+                                                    class="fa fa-trash"></i>Clear</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pins-order">
+                                    <div>Order by:</div>
+                                    <div class="order-btn ">Date<i class="fas fa-chevron-up turn-upside-down"></i></div>
+                                    <div class="order-btn ">Location<i class="fas fa-chevron-up turn-upside-down"></i>
+                                    </div>
+                                    <div class="order-btn ">DatasetId<i class="fas fa-chevron-up turn-upside-down"></i>
+                                    </div>
+                                    <div class="order-btn ">Title<i class="fas fa-chevron-up turn-upside-down"></i>
+                                    </div>
+                                </div>
+                                <div class="pins-container">
+                                    <div class="notification "><i class="fa fa-info-circle"
+                                            style="margin-right: 6px;"></i>No pins. Note that the pins will be saved
+                                        only if
+                                        you log in. Otherwise, the pins will be lost once the application is closed.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
-            <!--
+        </div>
+
+        <div id="map"></div>
+
+        <!--
             <div class="main__container">
                 <div class="main__content">
                     <form name="form1" id="form1" action="/action_page.php">
@@ -335,8 +350,14 @@
                     <button class="btn highlights"> Highlights </button>
                 </div>
             </div>-->
-        </div>
+    </div>
 
-        <script src = "app.js"></script>
-    </body>
+    <script src="app.js"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMRWQVUBTA_EOJx_ZsXNeiJnJ7nQL-jcU&callback=initMap&v=weekly"
+        defer></script>
+
+</body>
+
 </html>
