@@ -1,9 +1,9 @@
 // Map
 // Initialize and add the map
 function initMap() {
-  // The location of Uluru
+  // The location of rome
   const rome = { lat: 41.72314, lng: 12.94464 };
-  // The map, centered at Uluru
+  // The map, centered at rome
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 4,
     center: rome,
