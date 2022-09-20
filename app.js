@@ -8,7 +8,7 @@ function initMap() {
     zoom: 4,
     center: rome,
   });
-  // The marker, positioned at Uluru
+  // The marker, positioned at rome
   const marker = new google.maps.Marker({
     position: rome,
     map: map,
