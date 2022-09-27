@@ -1,21 +1,21 @@
-// Map
-// Initialize and add the map
-function initMap() {
-  // The location of rome
-  const rome = { lat: 41.72314, lng: 12.94464 };
-  // The map, centered at rome
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: rome,
-  });
-  // The marker, positioned at rome
-  const marker = new google.maps.Marker({
-    position: rome,
-    map: map,
-  });
-}
+// // Map
+// // Initialize and add the map
+// function initMap() {
+//   // The location of rome
+//   const rome = { lat: 41.9, lng: 12.5 };
+//   // The map, centered at rome
+//   const map = new google.maps.Map(document.getElementById("map"), {
+//     zoom:10,
+//     center: rome,
+//   });
+//   // The marker, positioned at rome
+//   const marker = new google.maps.Marker({
+//     position: rome,
+//     map: map,
+//   });
+// }
 
-window.initMap = initMap;
+// window.initMap = initMap;
 
 // mobile animation 
 const menu = document.querySelector('#mobile-menu')
