@@ -63,3 +63,10 @@ window.onload = function () {
     }
   }
 }
+
+async function getimagefroms3() {
+  const response = await fetch('https://vtag6coa54.execute-api.us-east-1.amazonaws.com/1/sdf-test-image-1?file=Honolulu-Hawaii-Airbus.jpg');
+  const json = await response.json();
+  console.log(json.message);
+}
+getimagefroms3();
