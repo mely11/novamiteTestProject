@@ -14,3 +14,5 @@ const imageBlob = await layer.getMap(getMapParams, ApiType.WMS);
 const imageBlob2 = await layer.getMap(getMapParams, ApiType.PROCESSING);
 
 document.querySelector("#image").src = imageBlob;
+
+export{};
