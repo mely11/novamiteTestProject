@@ -26,17 +26,21 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@sentinel-hub/sentinelhub-js": "^0.2.82",
     "@types/google.maps": "^3.48.8",
     "typescript": "^4.6.4",
-    "vite": "^2.9.9"
+    "vite": "^2.9.9",
+    "polygon-clipping": "^0.15.3"
   },
   "private": true,
   "dependencies": {
+    "@sentinel-hub/sentinelhub-js": "^0.2.82",
     "aws-sdk": "^2.1231.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "multer": "^1.4.5-lts.1",
-    "multer-s3": "^3.0.1"
+    "multer-s3": "^3.0.1",
+    "polygon-clipping": "^0.15.3"
   },
   "main": "index.js",
   "directories": {
