@@ -73,21 +73,6 @@ async function getimagefroms3() {
   const json = await response.json();
   console.log(json.message);
 }
-<<<<<<< Updated upstream
-getimagefroms3();
-function getimagefroms3() {
-  fetch('https://vtag6coa54.execute-api.us-east-1.amazonaws.com/1/sdf-test-image-1?file=Honolulu-Hawaii-Airbus.jpg', {
-    method: 'POST',
-    body: data
-  })
-  .then(result => {
-    console.log('Success:', result);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-}*/
-=======
 getimagefroms3();*/
 
 var apigClientFactory = {};
@@ -194,4 +179,3 @@ const getMapParams = {
 const imageBlob = await layer.getMap(getMapParams, ApiType.WMS);
 const imageBlob2 = await layer.getMap(getMapParams, ApiType.PROCESSING);
 document.querySelector("#image").src = imageBlob;
->>>>>>> Stashed changes
