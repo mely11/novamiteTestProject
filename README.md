@@ -28,7 +28,7 @@ CANNOT use vite (because of the usage of sentinelhub.js)
   
   "module": "dist/sentinelHub.esm.js",
   
-  -> "browser": "dist/sentinelHub.umd.js",  ->  **line 6 in package.json -> dist/sentinelHub.cjs.js->**
+  -> "browser": "dist/sentinelHub.umd.js",  ->  **line 6 in package.json -> dist/sentinelHub.cjs.js**
   
   "dependencies": {
   
