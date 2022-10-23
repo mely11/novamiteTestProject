@@ -1,4 +1,6 @@
-import { BBox, CRS_EPSG4326, MimeTypes, ApiType } from '@sentinel-hub/sentinelhub-js';
+// import { BBox, CRS_EPSG4326, MimeTypes, ApiType } from '@sentinel-hub/sentinelhub-js';
+
+const { BBox, CRS_EPSG4326, MimeTypes, ApiType} = require('@sentinel-hub/sentinelhub-js');
 
 const bbox = new BBox(CRS_EPSG4326, 18, 20, 20, 22);
 const getMapParams = {
