@@ -19,7 +19,7 @@ Node module need one line change if there is an error similar to this:
   
   "module": "dist/sentinelHub.esm.js",
   
-  -> "browser": "dist/sentinelHub.umd.js",  **line 6 in package.json -> dist/sentinelHub.cjs.js->**
+  "browser": "dist/sentinelHub.umd.js",  ->  **line 6 in package.json -> dist/sentinelHub.cjs.js->**
   
   "dependencies": {
   
