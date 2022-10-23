@@ -12,6 +12,7 @@ Node module need one line change if there is an error similar to this:
 ![image](https://user-images.githubusercontent.com/45051238/197378062-eddf0b1c-e23c-452c-905b-f081e10dc897.png)
 
 {
+
   "name": "@sentinel-hub/sentinelhub-js",
   
   "version": "0.2.82",
