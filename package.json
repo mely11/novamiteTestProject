@@ -8,7 +8,6 @@
     "maps",
     "samples"
   ],
-  "type": "module",
   "homepage": "https://github.com/googlemaps/js-samples#readme",
   "bugs": {
     "url": "https://github.com/googlemaps/js-samples/issues"
@@ -21,22 +20,20 @@
   "license": "Apache-2.0",
   "source": "index.html",
   "scripts": {
-    "dev": "vite",
     "start": "parcel",
-    "build": "parcel build",
-    "test": "tsc --no-emit",
-    "preview": "vite preview"
+    "build": "parcel build"
   },
   "devDependencies": {
     "@sentinel-hub/sentinelhub-js": "^0.2.82",
     "@types/google.maps": "^3.48.8",
     "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "timers-browserify": "^2.0.12",
     "typescript": "^4.6.4",
     "vite": "^2.9.9"
   },
   "private": true,
   "dependencies": {
-<<<<<<< Updated upstream
     "@sentinel-hub/sentinelhub-js": "^0.2.82",
     "aws-sdk": "^2.1231.0",
     "dotenv": "^16.0.3",
@@ -48,8 +45,4 @@
     "lib": "lib"
   },
   "author": ""
-=======
-    "@sentinel-hub/sentinelhub-js": "^0.2.79"
-  }
->>>>>>> Stashed changes
 }
