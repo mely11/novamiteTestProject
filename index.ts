@@ -1,3 +1,25 @@
+import { S2L2ALayer, BBox, CRS_EPSG4326, MimeTypes, ApiType } from '@sentinel-hub/sentinelhub-js';
+
+let imageURL;
+
+const perform = async () => {
+  const layer = new S2L2ALayer({ instanceId: '85fae6a2-7590-4318-b540-a43f6b54fd95', layerId: 'L2A-LAYER' });
+  const bbox = new BBox(CRS_EPSG4326, 18, 20, 20, 22);
+
+  const getMapParams = {
+    bbox: bbox,
+    fromTime: new Date(Date.UTC(2018, 11 - 1, 22, 0, 0, 0)),
+    toTime: new Date(Date.UTC(2018, 12 - 1, 22, 23, 59, 59)),
+    width: 256,
+    height: 256,
+    format: MimeTypes.JPEG,
+  };
+  const imageBlob = await layer.getMap(getMapParams, ApiType.WMS);
+  imageURL = URL.createObjectURL(imageBlob);
+};
+perform().then(() => { });
+
+
 // This example adds hide() and show() methods to a custom overlay's prototype.
 // These methods toggle the visibility of the container <div>.
 // overlay to or from the map.
@@ -51,7 +73,7 @@ function initMap(): void {
       // Create the img element and attach it to the div.
       const img = document.createElement("img");
 
-      img.src = this.image;
+      img.src = imageURL;
       img.style.width = "100%";
       img.style.height = "100%";
       img.style.position = "absolute";
