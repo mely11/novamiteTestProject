@@ -29,7 +29,7 @@ function initMap(): void {
     document.getElementById("map") as HTMLElement,
     {
       zoom: 11,
-      center: { lat: 71.8, lng: -150.1 },
+      center: { lat: 62.323907, lng: -150.109291 },
       mapTypeId: "satellite",
     }
   );
