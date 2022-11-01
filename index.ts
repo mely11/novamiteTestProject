@@ -157,7 +157,7 @@ function initMap(): void {
 
   const overlay: USGSOverlay = new USGSOverlay(bounds, image);
 
-  overlay.setMap(map);
+  overlay.setMap(null);
 
   const toggleButton = document.createElement("button");
 
@@ -175,6 +175,15 @@ function initMap(): void {
 
   toggleDOMButton.addEventListener("click", () => {
     overlay.toggleDOM(map);
+  });
+
+  const searchButton = document.getElementById("search-btn");
+  searchButton.addEventListener("click", () => {
+    if (document.getElementById("sentinel-1-checkbox").checked) {
+      overlay.setMap(map);
+    } else {
+      overlay.setMap(null);
+    }
   });
 
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(toggleDOMButton);
