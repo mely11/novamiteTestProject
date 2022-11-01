@@ -23,7 +23,7 @@ const perform = async () => {
   const imageBlob = await layer.getMap(getMapParams, ApiType.WMS);
   imageURL = URL.createObjectURL(imageBlob);
 };
-perform().then(() => {});
+perform().then(() => { });
 
 
 function initMap(): void {

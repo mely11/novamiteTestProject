@@ -15,5 +15,5 @@ const perform = async () => {
   const imageBlob = await layer.getMap(getMapParams, ApiType.WMS);
   document.querySelector("#image").src = URL.createObjectURL(imageBlob);
 };
-perform().then(() => {});
+perform().then(() => { });
 
