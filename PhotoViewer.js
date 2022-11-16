@@ -32,9 +32,9 @@ function listAlbums() {
                 var albumName = decodeURIComponent(prefix.replace('/', ''));
                 return getHtml([
                     '<li>',
-                    '<button style="margin:5px;" onclick="viewAlbum(\'' + albumName + '\')">',
-                    albumName,
-                    '</button>',
+                        '<button style="margin:5px;" onclick="viewAlbum(\'' + albumName + '\')">',
+                        albumName,
+                        '</button>',
                     '</li>'
                 ]);
             });
