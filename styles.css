@@ -725,6 +725,13 @@ div.commercial-data-description {
     line-height: 30px;
 }
 
+input[type=text] {
+    background-color: #3564DB;
+    color: #eee;
+    border: none; 
+    border-bottom: 1px solid #fff; 
+}
+
 #latlng {
     width: 240px;
 }
