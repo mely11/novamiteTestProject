@@ -4,12 +4,12 @@ let imageURL;
 
 const perform = async () => {
   const layer = new S2L2ALayer({ instanceId: '85fae6a2-7590-4318-b540-a43f6b54fd95', layerId: 'L2A-LAYER' });
-  const bbox = new BBox(CRS_EPSG4326, 24,-102, 23.8, -101.8);
+  const bbox = new BBox(CRS_EPSG4326, 18, 20, 20, 22);
 
   const getMapParams = {
     bbox: bbox,
-    fromTime: new Date(Date.now()),
-    toTime: new Date(Date.now()),
+    fromTime: new Date(Date.UTC(2018, 11 - 1, 22, 0, 0, 0)),
+    toTime: new Date(Date.UTC(2018, 12 - 1, 22, 23, 59, 59)),
     width: 256,
     height: 256,
     format: MimeTypes.JPEG,
