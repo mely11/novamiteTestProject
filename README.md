@@ -14,7 +14,7 @@ Parcel: https://parceljs.org (included in npm package) to combine all imported .
 CANNOT use vite (because of the usage of sentinelhub.js)
 
 
-## YARN START
+## yarn start
 Before that, don't forget to **yarn install**
 
 
