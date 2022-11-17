@@ -5,7 +5,6 @@ let imageURL;
 const perform = async () => {
   const layer = new S2L2ALayer({ instanceId: '85fae6a2-7590-4318-b540-a43f6b54fd95', layerId: 'L2A-LAYER' });
   const bbox = new BBox(CRS_EPSG4326, 18, 20, 20, 22);
-
   const getMapParams = {
     bbox: bbox,
     fromTime: new Date(Date.UTC(2018, 11 - 1, 22, 0, 0, 0)),
@@ -18,7 +17,6 @@ const perform = async () => {
   imageURL = URL.createObjectURL(imageBlob);
 };
 perform().then(() => { });
-
 
 // This example adds hide() and show() methods to a custom overlay's prototype.
 // These methods toggle the visibility of the container <div>.
