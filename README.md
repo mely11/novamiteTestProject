@@ -7,18 +7,20 @@ Yarn (dependency management) or npm (node package management) to install node mo
 
 including sentinelhub.js
 
+Amazon S3
 
-## Build tool: 
+
+## build tool: 
 Parcel: https://parceljs.org (included in npm package) to combine all imported .js files into one .js file
 
 CANNOT use vite (because of the usage of sentinelhub.js)
 
 
-### yarn start:
+## yarn start:
 Before that, don't forget to **yarn install**
 
 
-### **node module need one line change** if there is an error similar to this:
+## **node module need one line change** if there is an error similar to this:
 
 ![image](https://user-images.githubusercontent.com/45051238/197378062-eddf0b1c-e23c-452c-905b-f081e10dc897.png)
 
