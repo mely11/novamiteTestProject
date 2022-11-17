@@ -15,9 +15,6 @@
     <script src="PhotoViewer.js"></script>
     <script>listAlbums();</script>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
@@ -140,7 +137,7 @@
                                                     <div>
                                                         <div class="data-source-group">
                                                             <label>
-                                                                <input type="checkbox">&nbsp;
+                                                                <input type="checkbox" id="sentinel-1-checkbox">&nbsp;
                                                                 SENTINEL-1
                                                             </label>
                                                             <div class="datasources"></div>
@@ -150,19 +147,39 @@
                                                         <div class="data-source-group">
                                                             <label>
                                                                 <input type="checkbox">&nbsp;
-                                                                MODIS
+                                                                SMAP
+                                                            </label>
+                                                            <div class="datasources"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                LANDSAT
+                                                            </label>
+                                                            <div class="datasources"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                MODUS
+                                                            </label>
+                                                            <div class="datasources"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="data-source-group">
+                                                            <label>
+                                                                <input type="checkbox">&nbsp;
+                                                                Other
                                                             </label>
                                                             <div class="datasources"></div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        Coordinates
-                                        <div>
-                                            <div id="floating-panel">
-                                                <input id="latlng" type="text" value="Please enter the coordinates" />
-                                                <!-- <input id="submit" type="button" value="Reverse Geocode" />-->
                                             </div>
                                         </div>
                                     </div>
@@ -188,16 +205,11 @@
                                             <div class="months"></div>
                                         </div>
                                     </div>
-
                                 </div>
 
-                                <!-- <div class="search-btn-wrapper"><a class="novm-btn  full-size ">Search</a></div> -->
-                                <!-- <input id="submit" type="button" value="Reverse Geocode" />-->
-                                <div class="search-btn-wrapper">
-                                    <a class="novm-btn  full-size ">
-                                        Search
-                                    </a>
-                                </div>
+                                <!-- <div class="search-btn-wrapper"><a class="eob-btn  full-size ">Search</a></div> -->
+                                <div class="search-btn-wrapper" onclick="location.herf='fakeimages3.html'"><a
+                                        class="eob-btn  full-size " id="search-btn">Search</a></div>
 
                                 <div class="discover-tab hidden">
                                     <div class="highlights-panel">
@@ -259,10 +271,9 @@
                                         </select></div>
                                 </div>
                                 <div class="compare-layers-list"></div>
-                                <div class="notification ">
-                                    <i class="fa fa-info-circle" style="margin-right: 6px;"></i>
-                                        No layers to compare.
-                                </div>
+                                <div class="notification "><i class="fa fa-info-circle"
+                                        style="margin-right: 6px;"></i>No
+                                    layers to compare.</div>
                             </div>
                         </div>
                     </div>
@@ -299,9 +310,10 @@
                                     </div>
                                 </div>
                                 <div class="pins-container">
-                                    <div class="notification ">
-                                        <i class="fa fa-info-circle" style="margin-right: 6px;"></i>
-                                            No pins. Note that the pins will be saved only if you log in. Otherwise, the pins will be lost once the application is closed.
+                                    <div class="notification "><i class="fa fa-info-circle"
+                                            style="margin-right: 6px;"></i>No pins. Note that the pins will be saved
+                                        only if
+                                        you log in. Otherwise, the pins will be lost once the application is closed.
                                     </div>
                                 </div>
                             </div>
@@ -314,6 +326,8 @@
         </div>
 
         <div id="map"></div>
+
+
 
         <!--
             <div class="main__container">
@@ -351,15 +365,9 @@
 
     <script src="app.js" type="module"></script>
 
-    <!--
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMRWQVUBTA_EOJx_ZsXNeiJnJ7nQL-jcU&callback=initMap&v=weekly"
-        defer></script>-->
-
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2_-iFpevggPoXcO1iwzUlhZzPDY6Jf9U&callback=initMap&v=weekly"
-        defer>
-    </script>
+        defer></script>
 
 </body>
 
