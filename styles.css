@@ -719,3 +719,19 @@ div.commercial-data-description {
     width: 100%;
     height: 100%;
 }
+
+/* for google map coordinates*/
+#floating-panel {
+    line-height: 30px;
+}
+
+input[type=text] {
+    background-color: #3564DB;
+    color: #eee;
+    border: none; 
+    border-bottom: 1px solid #fff; 
+}
+
+#latlng {
+    width: 240px;
+}

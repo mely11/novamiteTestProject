@@ -15,6 +15,10 @@
     <script src="PhotoViewer.js"></script>
     <script>listAlbums();</script>
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css" />-->
+    <script type="module" src="./index.js"></script>
+
 </head>
 
 <body>
@@ -147,24 +151,6 @@
                                                         <div class="data-source-group">
                                                             <label>
                                                                 <input type="checkbox">&nbsp;
-                                                                SMAP
-                                                            </label>
-                                                            <div class="datasources"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="data-source-group">
-                                                            <label>
-                                                                <input type="checkbox">&nbsp;
-                                                                LANDSAT
-                                                            </label>
-                                                            <div class="datasources"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="data-source-group">
-                                                            <label>
-                                                                <input type="checkbox">&nbsp;
                                                                 MODUS
                                                             </label>
                                                             <div class="datasources"></div>
@@ -180,6 +166,13 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        Coordinates
+                                        <div>
+                                            <div id="floating-panel">
+                                                <input id="latlng" type="text" value="Please enter the coordinates" />
+                                                <input id="submit" type="button" value="Reverse Geocode" />
                                             </div>
                                         </div>
                                     </div>
