@@ -1,23 +1,25 @@
 # novamiteTestProject
 
-This project used 
-Google Map API, 
+## Technologies
+***
+A list of technologies used within the project:
+* Google Map API, 
 
-Yarn (dependency management) or npm (node package management) to install node modules, 
+* Yarn (dependency management) or npm (node package management) to install node modules, 
 
-including sentinelhub.js
+* including sentinelhub.js
 
-Amazon S3
+* Amazon S3**
 
 
-## build tool: 
+## Build Tool: 
 Parcel: https://parceljs.org (included in npm package) to combine all imported .js files into one .js file
 
 CANNOT use vite (because of the usage of sentinelhub.js)
 
 
-## yarn start:
-Before that, don't forget to **yarn install**
+## Yarn Start:
+Before yarn start, don't forget to **yarn install**
 
 
 ## **node module need one line change** if there is an error similar to this:
