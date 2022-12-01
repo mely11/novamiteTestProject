@@ -1,7 +1,7 @@
 # novamiteTestProject
 
 ## Technologies
-***
+
 A list of technologies used within the project:
 * Google Map API, 
 
@@ -11,17 +11,17 @@ A list of technologies used within the project:
 
 * Amazon S3**
 
-
+***
 ## Build Tool: 
 Parcel: https://parceljs.org (included in npm package) to combine all imported .js files into one .js file
 
 CANNOT use vite (because of the usage of sentinelhub.js)
 
-
+***
 ## Yarn Start:
 Before yarn start, don't forget to **yarn install**
 
-
+***
 ## **node module need one line change** if there is an error similar to this:
 
 ![image](https://user-images.githubusercontent.com/45051238/197378062-eddf0b1c-e23c-452c-905b-f081e10dc897.png)
