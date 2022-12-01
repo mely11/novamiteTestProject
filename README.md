@@ -7,7 +7,7 @@ A list of technologies used within the project:
 
 * Yarn (dependency management) or npm (node package management) to install node modules, 
 
-* including sentinelhub.js
+* including sentinelhub.js [[https://github.com/sentinel-hub/sentinelhub-js]]
 
 * Amazon S3**
 
